@@ -1,4 +1,3 @@
-# Testing Git
 import pygame
 pygame.init()
 
