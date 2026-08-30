@@ -4,35 +4,50 @@ A feature-rich take on classic Pong, built with Python and Pygame — full menu 
 multiple game modes, paddle customization, sound effects, and a persistent local
 leaderboard.
 
-<!-- 🖼️ IMAGE NEEDED #1: A screenshot of the main menu (the screen with Play/Options/Exit).
-     Save as: docs/screenshot-menu.png -->
 <p align="center">
-  <img src="docs/screenshot-menu.png" alt="Main menu" width="500"/>
+  <img src="docs/screenshot-main-menu.png" alt="Main menu" width="500"/>
 </p>
-
-<!-- 🖼️ IMAGE NEEDED #2: A screenshot of actual gameplay (mid-match, both paddles and ball visible).
-     Save as: docs/screenshot-gameplay.png -->
-<p align="center">
-  <img src="docs/screenshot-gameplay.png" alt="Gameplay" width="500"/>
-</p>
-
-<!-- 🖼️ IMAGE NEEDED #3 (optional): A screenshot of the leaderboard screen.
-     Save as: docs/screenshot-leaderboard.png -->
 
 ---
 
 ## ✨ Features
 
 - **Single-player and two-player modes**
-- **Three game modes:**
+- **Four game modes**, selectable from Play → mode select:
+
+  <p align="center">
+    <img src="docs/screenshot-game-modes.png" alt="Game mode select screen" width="420"/>
+  </p>
+
   - **Classic** — first to a target score wins
-  - **Timer** — score as much as possible before time runs out
-  - **Survival** — limited lives (hearts); the ball speeds up over time
-- **Selectable target score** (5 / 10 / 15) for Classic mode
-- **Paddle color customization** (red / green / blue / white)
-- **Persistent leaderboard** — top scores are saved locally between sessions
+  - **Time Race** — score as much as possible before the countdown ends
+  - **Survival** — limited lives (hearts); lose one each time you miss the ball
+  - **Survival Challenge** — a harder variant of Survival
+
+- **Selectable target score** (5 / 10 / 15) and **paddle color** (white / red / green / blue), from the options screen:
+
+  <p align="center">
+    <img src="docs/screenshot-options.png" alt="Options screen - score and paddle color" width="420"/>
+  </p>
+
+- **Persistent leaderboard** — enter your name after a match and your score is saved locally between sessions:
+
+  <p align="center">
+    <img src="docs/screenshot-enter-name.png" alt="Enter your name screen" width="420"/>
+  </p>
+
 - **Sound effects and background music** (paddle hits, scoring, game over)
-- **Full menu system** with hover states on every button
+
+### More gameplay
+
+<p align="center">
+  <img src="docs/screenshot-gameplay-classic.png" alt="Classic mode gameplay" width="270"/>
+  <img src="docs/screenshot-gameplay-timerace.png" alt="Time Race mode" width="270"/>
+</p>
+<p align="center">
+  <img src="docs/screenshot-gameplay-survival.png" alt="Survival mode with hearts" width="270"/>
+  <img src="docs/screenshot-gameplay-survival-challenge.png" alt="Survival Challenge mode" width="270"/>
+</p>
 
 ---
 
@@ -51,7 +66,8 @@ Pong-Game/
 │
 ├── docs/
 │   ├── Project Expo Summary.pdf
-│   └── pong.docx
+│   ├── pong.docx
+│   └── screenshot-*.png     # Screenshots used in this README
 │
 └── requirements.txt
 ```
